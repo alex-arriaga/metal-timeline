@@ -1,0 +1,15 @@
+{
+  "name": "metal-timeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "metal.js"
+  ],
+  "author": "Alex Arriaga <alex.arriaga@webtraining.zone>",
+  "license": "UNLICENSED",
+  "private": true
+}
