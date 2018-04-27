@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/jsx/main.js',
+  entry: './src/jsx/timeline.js',
   module: {
     rules: [
       {
