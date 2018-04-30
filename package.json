@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:jsx": "webpack --config webpack.config.jsx.js",
+    "build": "npm run build:jsx",
+    "start": "http-server . -p 4000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,6 +25,7 @@
     "babel-preset-metal": "^4.1.0",
     "babel-preset-metal-jsx": "^0.1.1",
     "css-loader": "^0.28.11",
+    "http-server": "^0.11.1",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",

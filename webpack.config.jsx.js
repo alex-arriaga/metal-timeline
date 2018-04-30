@@ -26,12 +26,13 @@ module.exports = {
           }]
       }]
   },
+  watch: true,
   output: {
     library: 'metal',
     libraryTarget: 'this',
     filename: './timeline.js'
   },
   plugins: [
-    // new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.optimize.ModuleConcatenationPlugin(),
   ]
 };
