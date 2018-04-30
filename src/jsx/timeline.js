@@ -10,7 +10,7 @@ class Timeline extends JSXComponent {
   render() {
     return (
         <div class="metal-item-timeline">
-          <h2>Timeline</h2>
+          <h2>Timeline :)</h2>
           <div class="metal-item-timeline__items">
             {this.props.items.map(
                 (item, index) => {
@@ -21,6 +21,16 @@ class Timeline extends JSXComponent {
         </div>
     );
   }
+
+  willReceiveProps(changes) {
+    console.log('>> Changes', changes);
+    // if (changes.foo && changes.foo.newVal !== changes.foo.prevVal) {
+    //   // This is available in the next render
+    //   this.state.bar = 'bar1';
+    // }
+
+    this.state.items = changes;
+  }
 }
 
 Timeline.PROPS = {
@@ -29,7 +39,7 @@ Timeline.PROPS = {
   }
 };
 
-Timeline.STATE = Timeline.PROPS;
+// Timeline.STATE = Timeline.PROPS;
 //     {
 //   items: {
 //     value: [

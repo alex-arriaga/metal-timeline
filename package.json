@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:jsx": "webpack --config webpack.config.jsx.js",
-    "build": "npm run build:jsx",
+    "build:jsx-dev": "webpack --config webpack.config.jsx.js --mode=development",
+    "build:jsx-prod": "webpack --config webpack.config.jsx.js --mode=production",
+    "dev": "npm run build:jsx-dev",
+    "prod": "npm run build:jsx-prod",
     "start": "http-server . -p 4000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +15,7 @@
     "metal.js"
   ],
   "author": "Alex Arriaga <alex.arriaga@webtraining.zone>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "metal-jsx": "^2.16.5",
