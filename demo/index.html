@@ -9,12 +9,19 @@
     <div id="placeholder"></div>
     <script src="../dist/timeline.js"></script>
     <script type="text/javascript">
-      new metal.Timeline({},'#placeholder');
+      new metal.Timeline({
+            items: [
+              {
+                title: 'External #2'
+              }
+            ]
+          },
+          '#placeholder');
     </script>
 
 
     <h2>Example using a custom component</h2>
-    <metal-timeline></metal-timeline>
+    <metal-timeline items='[{"title":"Sent from external 1"}, {"title":"Sent from external 2"}]'></metal-timeline>
 
 </body>
 </html>
